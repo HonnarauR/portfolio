@@ -44,18 +44,20 @@ body{
     align-self: center;
     
 }
-.submit{
-    margin: 5%;
+#submit{
+    margin-top: 5%;
     margin-left: 27%;
+    padding:0% 5%;
     align-self: center;
-    width: 30%;
-    height:30px;
+    /* width: 30%; */
+    /* height:30px; */
     font-size: large;
     font-weight: bold;
     background-image:linear-gradient(to right, lightblue,lightgreen)
 }
-.submit:hover{
+#submit:hover{
     opacity: 0.7;
+    cursor: pointer;
     /* background-color: green; */
 }
 .textArea{
@@ -69,4 +71,12 @@ p{
 
 .contactLanded{
     position: absolute;
+}
+#result{
+    /* display: none; */
+    margin-bottom: 2%;
+    color:rgb(61, 33, 185);
+}
+#error{
+    color:red;
 }

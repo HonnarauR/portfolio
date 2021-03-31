@@ -5,43 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contact.css">
+    <script src="./contact.js" defer></script>
     <title>Contact me</title>
 </head>
 <body>
     <div id="page-wrapper">
     <div class='glass'></div>
-     <!-- Header -->
+    
+    <!-- Header -->
      <header id="header" class="contactLanded">
         <h1 id="logo"><a href="index.html">Home</a></h1>
     </header>
 
     <div id='container'>
-        <form onsubmit="handleSubmit()" id='form' >
+        <form  id='form' >
            <div id='formName'> <h2> Contact Form</h2></div>
            <br >
+           <div id='result' ></div>
+           <div id='error' ></div>
+
             <div class="input">
                 <label for="Name">Name : </label>
-                <input class='textArea' type='text' name='name'/>
+                <input class='textArea' type='text' id='name' required/>
             </div>
             <div class="input" >
                 <label for="Email">Email : </label>
-                <input class='textArea' type='email' name='email'/>
+                <input id='email' class='textArea' type='email' name='email' required>
             </div>
             <div class="input">
                 <label for="work">Subject : </label>
-                <select name="work" class='textArea'>
+                <select id="work" class='textArea'>
                     <option value="for Hiring">for Hiring</option>
                     <option value="for Freelancing">Freelancing</option>
                     <option value="for Appreciating the work">Appreciating the work</option>
                 </select>
             </div>
             <div class="input">
-                <label for="">Message: </label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:90% ;width:100%"></textarea>
+                <label for="message">Message: </label>
+                <textarea id="message" name="message" placeholder="Write something.." style="height:90% ;width:100%"></textarea>
             </div>
-            <div>
-                <button class="submit">Submit</button>
+            <div class="input">
+                <button id="submit" >Submit</button>
             </div>
+            
             <p>Email : honnarajuramesh@gmail.com </p>
 
         </form>
